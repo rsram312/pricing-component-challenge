@@ -1,0 +1,197 @@
+html,body {
+  text-align: center;
+  background-color: #F6F6FE;
+  height: 100%;
+}
+
+.bottom-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.top-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.toggle {
+  padding: 10px;
+  font-size: 15px;
+}
+
+.plan-title {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+hr {
+  width: 85%;
+}
+
+.basic-plan {
+  background-color: white;
+  color: #494C5F;
+  border-radius: 15px 0 0 15px;
+  position: relative;
+  left: 4px;
+  width: 25%;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 2;
+  padding: 20px 0;
+}
+
+.professional-plan {
+  background-color: white;
+  background-image: linear-gradient(to right, #A3A8F0, #696FDD);
+  border-radius: 15px;
+  position: relative;
+  width: 25%;
+  display: inline-block;
+  vertical-align: middle; /* Aligns the squares */
+  line-height: 2;
+  padding: 60px 0;
+  color: white;
+}
+
+.master-plan {
+  background-color: white;
+  color: #494C5F;
+  border-radius: 0 15px 15px 0;
+  position: relative;
+  width: 25%;
+  display: inline-block;
+  vertical-align: middle; /* Aligns the squares */
+  line-height: 2;
+  padding: 20px 0;
+  right: 4px;
+}
+
+.monthly-plan {
+  font-weight: bold;
+  font-size: 30px;
+  display: none;
+}
+
+.annual-plan {
+  display: inline;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.switch {
+  position: relative;
+  height: 30px;
+  margin: 10px;
+  width: 60px;
+  bottom: 5px;
+  display: inline-block;
+}
+
+.slider-round {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider-round:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider-round {
+  background-color: #2196F3;
+
+}
+
+input:focus + .slider-round {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider-round:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider-round {
+  border-radius: 34px;
+}
+
+.slider-round:before {
+  border-radius: 50%;
+}
+
+input:checked + .monthly-plan {
+  display: inline;
+}
+
+input:checked + .annual-plan {
+  display: none;
+}
+
+.gradient-button {
+	background: linear-gradient(to right, #A3A8F0 5%, #696FDD 100%);
+	background-color: #A3A8F0;
+  border: solid 2px;
+	border-radius: 7px;
+  border-color: white;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+  font-size: 1rem;
+	padding: 10px 25%;
+  margin-top: 20px;
+	text-decoration: none;
+}
+
+.gradient-button:hover {
+  background: white;
+  color: #696FDD;
+  border: solid 2px;
+}
+
+.gradient-button:active {
+	position:relative;
+	top:1px;
+}
+
+.white-button {
+	background-color: white;
+	border-radius: 7px;
+  border: solid 2px;
+  border-color: transparent;
+	display: inline-block;
+	color: #696FDD;
+	font-size: 1rem;
+	padding: 10px 25%;
+  margin-top: 28px;
+	text-decoration:none;
+}
+
+.white-button:hover {
+  background-color: rgba(0,0,0,0);
+  color: white;
+  border: solid 2px;
+}
+
+.white-button:active {
+	position:relative;
+	top:1px;
+}
